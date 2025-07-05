@@ -10,10 +10,6 @@ const routes: Routes = [
     children:[
 
       {
-        path: 'cuenta',
-        loadChildren: () => import('../cuenta/cuenta.module').then(m => m.CuentaPageModule)
-      },
-      {
         path: 'home',
         loadChildren: () => import('../home/home.module').then( m => m.HomePageModule)
       },
@@ -24,6 +20,10 @@ const routes: Routes = [
       {
         path: 'cursos',
         loadChildren: () => import('../cursos/cursos.module').then( m => m.CursosPageModule)
+      },
+      {
+        path: 'calendario',
+        loadChildren: () => import('../calendario/calendario.module').then( m => m.CalendarioPageModule)
       },
       {
         path: '',

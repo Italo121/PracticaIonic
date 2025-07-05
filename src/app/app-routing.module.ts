@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { TabsPage } from './pages/tabs/tabs.page';
 
 const routes: Routes = [
   
@@ -25,7 +24,8 @@ const routes: Routes = [
   {
     path: 'cursos',
     loadChildren: () => import('./pages/cursos/cursos.module').then( m => m.CursosPageModule)
-  },  {
+  },
+  {
     path: 'alumnos',
     loadChildren: () => import('./pages/alumnos/alumnos.module').then( m => m.AlumnosPageModule)
   },
@@ -36,6 +36,21 @@ const routes: Routes = [
   {
     path: 'calificaciones',
     loadChildren: () => import('./pages/calificaciones/calificaciones.module').then( m => m.CalificacionesPageModule)
+  },
+  {
+    path: 'detalle-curso',
+    loadChildren: () => import('./pages/detalle-curso/detalle-curso.module').then( m => m.DetalleCursoPageModule)
+  },  {
+    path: 'clases-curso',
+    loadChildren: () => import('./pages/clases-curso/clases-curso.module').then( m => m.ClasesCursoPageModule)
+  },
+  {
+    path: 'calificaciones-curso',
+    loadChildren: () => import('./pages/calificaciones-curso/calificaciones-curso.module').then( m => m.CalificacionesCursoPageModule)
+  },
+  {
+    path: 'asistencias-curso',
+    loadChildren: () => import('./pages/asistencias-curso/asistencias-curso.module').then( m => m.AsistenciasCursoPageModule)
   },
 
 

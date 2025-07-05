@@ -1,14 +1,11 @@
 <ion-header>
   <ion-toolbar color ="primary">
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="tabs/home"></ion-back-button>
-    </ion-buttons>
-    <ion-title mode="md" class="ion-text-center">Cursos</ion-title>
+    <ion-title mode="md" class="ion-text-center">Asignaturas</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content color="light" class="ion-padding">
-  <ion-card>
+  <ion-card routerLink="/detalle-curso">
     <ion-card-header>
       <ion-card-title>Lenguaje y Comunicacion</ion-card-title>
       <ion-card-subtitle>Clases dictadas : 40</ion-card-subtitle>
@@ -18,7 +15,7 @@
       Here's a small text description for the card content. Nothing more, nothing less.
     </ion-card-content>
   </ion-card>
-  <ion-card>
+  <ion-card routerLink="/detalle-curso">
     <ion-card-header>
       <ion-card-title>Matematicas</ion-card-title>
       <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
@@ -28,7 +25,7 @@
       Here's a small text description for the card content. Nothing more, nothing less.
     </ion-card-content>
   </ion-card>
-  <ion-card>
+  <ion-card routerLink="/detalle-curso">
     <ion-card-header>
       <ion-card-title>Historia y Geografia</ion-card-title>
       <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
@@ -38,7 +35,7 @@
       Here's a small text description for the card content. Nothing more, nothing less.
     </ion-card-content>
   </ion-card>
-  <ion-card>
+  <ion-card routerLink="/detalle-curso">
     <ion-card-header>
       <ion-card-title>Ciencias Naturales</ion-card-title>
       <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
@@ -49,5 +46,5 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-button expand="block" class="ion-padding"> Nuevo curso</ion-button>
+  <ion-button expand="block" class="ion-padding"> Nueva asignatura +</ion-button>
 </ion-content>
