@@ -52,6 +52,22 @@ const routes: Routes = [
     path: 'asistencias-curso',
     loadChildren: () => import('./pages/asistencias-curso/asistencias-curso.module').then( m => m.AsistenciasCursoPageModule)
   },
+  {
+    path: 'notificaciones',
+    loadChildren: () => import('./pages/notificaciones/notificaciones.module').then( m => m.NotificacionesPageModule)
+  },
+  {
+    path: 'certificados',
+    loadChildren: () => import('./pages/certificados/certificados.module').then( m => m.CertificadosPageModule)
+  },
+  {
+    path: 'detalle-alumno',
+    loadChildren: () => import('./pages/detalle-alumno/detalle-alumno.module').then( m => m.DetalleAlumnoPageModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./pages/register/register.module').then( m => m.RegisterPageModule)
+  },
 
 
 ];

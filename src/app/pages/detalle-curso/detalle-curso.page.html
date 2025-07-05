@@ -1,82 +1,105 @@
 <ion-header>
-  <ion-toolbar color ="primary">
+  <ion-toolbar color="primary">
     <ion-buttons slot="start">
       <ion-back-button defaultHref="tabs/cursos"></ion-back-button>
     </ion-buttons>
-    <ion-title mode="md" class="ion-text-center">Lenguaje y Comunicacion</ion-title>
+    <ion-title class="ion-text-center">Lenguaje y Comunicación</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true" color="light" class="ion-padding">
-  <ion-card>
-    <ion-list>
-      <ion-list-header>
-        <ion-label>
-          <h2>Total de clases : 5</h2>
-        </ion-label>
-        <ion-button routerLink="/clases-curso" >Ver todas</ion-button>
-      </ion-list-header>
-      <ion-item>
-        <ion-label>Clase 1 </ion-label>
-        <ion-label slot="end"> 01/07/2025</ion-label>
-      </ion-item>
-      <ion-item>
-        <ion-label>Clase 2</ion-label>
-        <ion-label slot="end"> 02/07/2025</ion-label>
-      </ion-item>
-      <ion-item>
-        <ion-label>Clase 3</ion-label>
-        <ion-label slot="end"> 03/07/2025</ion-label>
-      </ion-item>
 
-    </ion-list>
+  <!-- Clases -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        Total de clases: 5
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item lines="full">
+          <ion-icon name="book-outline" slot="start"></ion-icon>
+          <ion-label>Clase 1</ion-label>
+          <ion-label slot="end">01/07/2025</ion-label>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-icon name="book-outline" slot="start"></ion-icon>
+          <ion-label>Clase 2</ion-label>
+          <ion-label slot="end">02/07/2025</ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-icon name="book-outline" slot="start"></ion-icon>
+          <ion-label>Clase 3</ion-label>
+          <ion-label slot="end">03/07/2025</ion-label>
+        </ion-item>
+      </ion-list>
+      <div class="ion-text-end ion-padding-top">
+        <ion-button fill="outline" size="small" routerLink="/clases-curso">Ver todas</ion-button>
+      </div>
+    </ion-card-content>
   </ion-card>
 
+  <!-- Notas -->
   <ion-card>
-    <ion-list>
-      <ion-list-header>
-        <ion-label>
-          <h2>Promedio general : 5.1 </h2>
-        </ion-label>
-        <ion-button routerLink="/calificaciones-curso" >Ver notas</ion-button>
-      </ion-list-header>
-      <ion-item>
-        <ion-label>Nota 1 </ion-label>
-        <ion-label slot="end"> Promedio de nota 5.4</ion-label>
-      </ion-item>
-      <ion-item>
-        <ion-label>Nota 2</ion-label>
-        <ion-label slot="end"> Promedio de nota 6.4</ion-label>
-      </ion-item>
-      <ion-item>
-        <ion-label>Nota 3</ion-label>
-        <ion-label slot="end"> Promedio de nota 4.9</ion-label>
-      </ion-item>
-
-    </ion-list>
+    <ion-card-header>
+      <ion-card-title>
+        Promedio general: 5.1
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item lines="full">
+          <ion-icon name="bar-chart-outline" slot="start"></ion-icon>
+          <ion-label>Nota 1</ion-label>
+          <ion-label slot="end">Promedio: 5.4</ion-label>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-icon name="bar-chart-outline" slot="start"></ion-icon>
+          <ion-label>Nota 2</ion-label>
+          <ion-label slot="end">Promedio: 6.4</ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-icon name="bar-chart-outline" slot="start"></ion-icon>
+          <ion-label>Nota 3</ion-label>
+          <ion-label slot="end">Promedio: 4.9</ion-label>
+        </ion-item>
+      </ion-list>
+      <div class="ion-text-end ion-padding-top">
+        <ion-button fill="outline" size="small" routerLink="/calificaciones-curso">Ver notas</ion-button>
+      </div>
+    </ion-card-content>
   </ion-card>
 
+  <!-- Asistencia -->
   <ion-card>
-    <ion-list>
-      <ion-list-header>
-        <ion-label>
-          <h2>Asistencia : 57% </h2>
-        </ion-label>
-        <ion-button routerLink="/asistencias-curso" >Ver todas</ion-button>
-      </ion-list-header>
-      <ion-item>
-        <ion-label>Clase 1 </ion-label>
-        <ion-label slot="end"> Porcentaje 55%</ion-label>
-      </ion-item>
-      <ion-item>
-        <ion-label>Clase 2</ion-label>
-        <ion-label slot="end"> Porcentaje 75%</ion-label>
-      </ion-item>
-      <ion-item>
-        <ion-label>Clase 3</ion-label>
-        <ion-label slot="end"> Porcentaje 65%</ion-label>
-      </ion-item>
-
-    </ion-list>
+    <ion-card-header>
+      <ion-card-title>
+        Asistencia: 57%
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item lines="full">
+          <ion-icon name="checkmark-done-outline" slot="start"></ion-icon>
+          <ion-label>Clase 1</ion-label>
+          <ion-label slot="end">55%</ion-label>
+        </ion-item>
+        <ion-item lines="full">
+          <ion-icon name="checkmark-done-outline" slot="start"></ion-icon>
+          <ion-label>Clase 2</ion-label>
+          <ion-label slot="end">75%</ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-icon name="checkmark-done-outline" slot="start"></ion-icon>
+          <ion-label>Clase 3</ion-label>
+          <ion-label slot="end">65%</ion-label>
+        </ion-item>
+      </ion-list>
+      <div class="ion-text-end ion-padding-top">
+        <ion-button fill="outline" size="small" routerLink="/asistencias-curso">Ver todas</ion-button>
+      </div>
+    </ion-card-content>
   </ion-card>
+
 </ion-content>

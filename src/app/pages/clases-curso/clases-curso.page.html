@@ -1,56 +1,68 @@
 <ion-header>
-  <ion-toolbar color ="primary">
+  <ion-toolbar color="primary">
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/detalle-curso"></ion-back-button>
     </ion-buttons>
-    <ion-title mode="md" class="ion-text-center">Lenguaje y Comunicacion</ion-title>
+    <ion-title class="ion-text-center">Lenguaje y Comunicación</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true" class="ion-padding" color="light">
+
   <ion-card>
-    <ion-item-group>
-      <ion-item-divider>
-        <ion-label>Semana 1</ion-label>
-      </ion-item-divider>
-    
+    <ion-card-header>
+      <ion-card-title>Semana 1</ion-card-title>
+    </ion-card-header>
+    <ion-list>
       <ion-item lines="full">
-        <ion-label>Clase 1 - Caligrafia</ion-label>
+        <ion-icon name="create-outline" slot="start"></ion-icon>
+        <ion-label>Clase 1 - Caligrafía</ion-label>
       </ion-item>
       <ion-item lines="full">
-        <ion-label>Clase 2 - Comprecion lectora</ion-label>
+        <ion-icon name="book-outline" slot="start"></ion-icon>
+        <ion-label>Clase 2 - Comprensión lectora</ion-label>
       </ion-item>
       <ion-item lines="full">
+        <ion-icon name="mic-outline" slot="start"></ion-icon>
         <ion-label>Clase 3 - Escucha y habla</ion-label>
       </ion-item>
       <ion-item lines="full">
+        <ion-icon name="pencil-outline" slot="start"></ion-icon>
         <ion-label>Clase 4 - Escritura limpia</ion-label>
       </ion-item>
       <ion-item lines="none">
-        <ion-label>Clase 5 - Sabiduria plena</ion-label>
+        <ion-icon name="bulb-outline" slot="start"></ion-icon>
+        <ion-label>Clase 5 - Sabiduría plena</ion-label>
       </ion-item>
-    </ion-item-group>
-    
-    <ion-item-group>
-      <ion-item-divider>
-        <ion-label>Semana 2</ion-label>
-      </ion-item-divider>
-    
-      <ion-item lines="full">
-        <ion-label>Clase 1 - Caligrafia</ion-label>
-      </ion-item>
-      <ion-item lines="full">
-        <ion-label>Clase 2 - Comprecion lectora</ion-label>
-      </ion-item>
-      <ion-item lines="full">
-        <ion-label>Clase 3 - Escucha y habla</ion-label>
-      </ion-item>
-      <ion-item lines="full">
-        <ion-label>Clase 4 - Escritura limpia</ion-label>
-      </ion-item>
-      <ion-item lines="none">
-        <ion-label>Clase 5 - Sabiduria plena</ion-label>
-      </ion-item>
-    </ion-item-group>
+    </ion-list>
   </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Semana 2</ion-card-title>
+    </ion-card-header>
+    <ion-list>
+      <ion-item lines="full">
+        <ion-icon name="create-outline" slot="start"></ion-icon>
+        <ion-label>Clase 1 - Caligrafía</ion-label>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-icon name="book-outline" slot="start"></ion-icon>
+        <ion-label>Clase 2 - Comprensión lectora</ion-label>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-icon name="mic-outline" slot="start"></ion-icon>
+        <ion-label>Clase 3 - Escucha y habla</ion-label>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-icon name="pencil-outline" slot="start"></ion-icon>
+        <ion-label>Clase 4 - Escritura limpia</ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-icon name="bulb-outline" slot="start"></ion-icon>
+        <ion-label>Clase 5 - Sabiduría plena</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
 </ion-content>
