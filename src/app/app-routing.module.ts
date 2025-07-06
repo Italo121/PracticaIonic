@@ -68,6 +68,14 @@ const routes: Routes = [
     path: 'register',
     loadChildren: () => import('./pages/register/register.module').then( m => m.RegisterPageModule)
   },
+  {
+    path: 'nueva-asignatura',
+    loadChildren: () => import('./pages/nueva-asignatura/nueva-asignatura.module').then( m => m.NuevaAsignaturaPageModule)
+  },
+  {
+    path: 'nuevo-alumno',
+    loadChildren: () => import('./pages/nuevo-alumno/nuevo-alumno.module').then( m => m.NuevoAlumnoPageModule)
+  },
 
 
 ];
