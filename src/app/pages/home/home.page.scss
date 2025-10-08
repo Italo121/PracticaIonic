@@ -1,0 +1,15 @@
+.horizontal-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 12px; /* Espacio entre las cartas */
+    padding: 8 px 0;
+
+    scroll-snap-type: x mandatory;
+  }
+  
+  .horizontal-scroll ion-card {
+    flex: 0 0 auto;
+    min-width: 200px; /* Ajusta el ancho según necesites */
+    scroll-snap-align: start;
+  }
+  
